@@ -6,74 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Drogaria Star</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet"  href="style.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
 
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="caixa">
-        <h1><img src="logo-star.png" class="img-logo-banner"></h1>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contatos</a></li>
-        </nav>  
-        </div>  
-        </ul>
+            <h1><img src="logo-star.png" class="img-logo-banner" alt="Logo Drogaria Star"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Produtos</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <ul class="produtos">
             <li>
                 <h2>Ibuprofeno</h2>
-                <img src="ibuprofeno.jpge.jpg" class="img-produtos">
-                <p class="produto-descricao">O ibuprofeno é um anti-inflamatório não esteroidal (AINE).
-
-                    Trata-se de um princípio ativo que age contra inflamações não tão intensas, sendo comumente indicado contra febre e dores diversas. </p>
+                <img src="/ibuprofeno.jpge.jpg" class="img-produtos" alt="Imagem do Ibuprofeno">
+                <p class="produto-descricao">O ibuprofeno é um anti-inflamatório não esteroidal (AINE). Trata-se de um princípio ativo que age contra inflamações não tão intensas, sendo comumente indicado contra febre e dores diversas.</p>
                 <p class="produtos-preco">R$25,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
             </li>
+            <!-- Outros itens do produto -->
             <li>
                 <h2>Cenevit</h2>
-                <img src="cenevit.jpge.jpg" class="img-produtos">
+                <img src="/cenevit.jpge.jpg" class="img-produtos" alt="Imagem do Cenevit">
                 <p class="produto-descricao">Cenevit está indicado em todos os estados em que há deficiência ou aumento das necessidades de vitamina C no organismo. Modo de usar: Cenevit comprimido efervescente (uso adulto): tem sua dose recomendada de 1 comprimido ao dia, ou a critério médico.</p>
                 <p class="produtos-preco">R$18,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
             </li>
             <li>
                 <h2>Neosoro</h2>
-                <img src="neosoro.jpg" class="img-produtos">
+                <img src="neosoro.jpg" class="img-produtos" alt="Imagem do Neosoro">
                 <p class="produto-descricao">O princípio ativo do Neosoro® de uso adulto é um descongestionante. Desse modo, é indicado no tratamento da congestão nasal (obstrução nasal) para o alívio dos sintomas em resfriados, quadros alérgicos nasais, rinites e rinossinusites.</p>
                 <p class="produtos-preco">R$5,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
             </li>
-        </li>
-        <li>
-            <h2>Doralgina</h2>
-            <img src="doralginda.jpge" class="img-produtos">
-            <p class="produto-descricao">Para que serve Doralgina serve para febre?
-                Doralgina serve pra febre? Um dos princípios ativos da Doralgina é a Dipirona. Uma das funções da Dipirona é abaixar a febre. Portanto, a Doralgina consegue abaixar a febre..</p>
-            <p class="produtos-preco">R$15,00</p>
-        </li>
-    </li>
-    <li>
-        <h2>Centro Zinco</h2>
-        <img src="centro-zinco.jpg" class="img-produtos">
-        <p class="produto-descricao">Centrozinco é um suplemento de vitaminas e minerais desenvolvido para suprir as prováveis deficiências nutricionais que a dieta ou outras condições biológicas podem originar. Os nutrientes de sua formulação estão relacionados com o metabolismo e a produção de energia em nosso organismo.</p>
-        <p class="produtos-preco">R$35,00</p>
-    </li>
-</li>
-<li>
-    <h2>Whey Protein</h2>
-    <img src="whey.png" class="img-produtos">
-    <p class="produto-descricao">O aumento de volume que você procura está na suplementação com Nutri Whey Protein, o hipercalórico Integralmédica com alta concentração de proteína, são 30 g por porção para máximo ganho de massa muscular...</p>
-    <p class="produtos-preco">R$71,92</p>
-</li>
-
+            <li>
+                <h2>Doralgina</h2>
+                <img src="/doralginda.jpge" class="img-produtos" alt="Imagem do Doralgina">
+                <p class="produto-descricao">Para que serve Doralgina serve para febre? Doralgina serve pra febre? Um dos princípios ativos da Doralgina é a Dipirona. Uma das funções da Dipirona é abaixar a febre. Portanto, a Doralgina consegue abaixar a febre.</p>
+                <p class="produtos-preco">R$15,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </li>
+            <li>
+                <h2>Centro Zinco</h2>
+                <img src="centro-zinco.jpg" class="img-produtos" alt="Imagem do Centro Zinco">
+                <p class="produto-descricao">Centrozinco é um suplemento de vitaminas e minerais desenvolvido para suprir as prováveis deficiências nutricionais que a dieta ou outras condições biológicas podem originar. Os nutrientes de sua formulação estão relacionados com o metabolismo e a produção de energia em nosso organismo.</p>
+                <p class="produtos-preco">R$35,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </li>
+            <li>
+                <h2>Whey Protein</h2>
+                <img src="whey.png" class="img-produtos" alt="Imagem do Whey Protein">
+                <p class="produto-descricao">O aumento de volume que você procura está na suplementação com Nutri Whey Protein, o hipercalórico Integralmédica com alta concentração de proteína, são 30 g por porção para máximo ganho de massa muscular...</p>
+                <p class="produtos-preco">R$71,92</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </li>
         </ul>
+
+        <h2>Seu Carrinho de Compras</h2>
+        <ul class="cart-items"></ul>
+        <p>Total: <span class="cart-total">R$0,00</span></p>
+        <button class="checkout-button">Finalizar Compra</button>
     </main>
     <footer>
-        <img src="logo-star2.png" width="8%">
-        <p class="copyright">&copy; Copyright Drogaria Star - 2022</p>
+        <img src="logo-star2.png" width="8%" alt="Logo Drogaria Star">
+        <p class="footer-text">&copy; Drogaria Star - 2022</p>
     </footer>
 
+    <script>
+     const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        const cartItemsElement = document.querySelector('.cart-items');
+        const cartTotalElement = document.querySelector('.cart-total');
+        const checkoutButton = document.querySelector('.checkout-button');
+
+        let cartItems = [];
+        let cartTotal = 0;
+
+        addToCartButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const product = {
+                    name: button.parentNode.querySelector('h2').textContent,
+                    price: parseFloat(button.parentNode.querySelector('.produtos-preco').textContent.replace('R$', '').replace(',', '.')),
+                    image: button.parentNode.querySelector('img').getAttribute('src')
+                };
+
+                cartItems.push(product);
+                cartTotal += product.price;
+
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            cartItemsElement.innerHTML = '';
+            cartTotalElement.textContent = `R$${cartTotal.toFixed(2)}`;
+
+            cartItems.forEach((item, index) => {
+                const cartItem = document.createElement('li');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name} image">
+                    <p>${item.name}</p>
+                    <p>R$${item.price.toFixed(2)}</p>
+                    <button class="remove-from-cart" data-index="${index}">Remover</button>
+                `;
+
+                cartItemsElement.appendChild(cartItem);
+            });
+
+            const removeFromCartButtons = document.querySelectorAll('.remove-from-cart');
+            removeFromCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const index = parseInt(button.dataset.index);
+                    const removedItem = cartItems.splice(index, 1)[0];
+                    cartTotal -= removedItem.price;
+                    updateCart();
+                });
+            });
+
+            checkoutButton.addEventListener('click', () => {
+                if (cartItems.length > 0) {
+                    // Simular uma finalização de compra
+                    alert('Compra finalizada! Obrigado por comprar na Drogaria Star.');
+                    cartItems = [];
+                    cartTotal = 0;
+                    updateCart();
+                } else {
+                    alert('Seu carrinho está vazio. Adicione itens antes de finalizar a compra.');
+                }
+            });
+        }
+    </script>
 </body>
 </html>

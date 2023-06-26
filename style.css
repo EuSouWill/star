@@ -1,11 +1,11 @@
-header{
+header {
     background: #000000;
     padding: 20px 0;
-
 }
 
 
-}
+
+
 .caixa {
     width: 940px;
     position: relative;
@@ -47,17 +47,16 @@ nav a {
 nav a:hover {
     color: rgb(98, 138, 138);
     text-decoration: underline;
-    
-
 }
+
 
 .produtos {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-
-
 }
+
 
 .img-produtos {
     width: 250px;
@@ -68,7 +67,7 @@ nav a:hover {
     display: inline-block;
    text-align: center;
     width: 30%;
-    vertical-align: text-top;
+    vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
